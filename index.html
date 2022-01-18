@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Survey Project Form</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Survey Project Form</h1>
+    <p id="description">Are you a Discworld Fan?</p>
+    <form action="https://fcc-registration-form.com" id="survey-form">
+
+        <fieldset>
+            <label id="name-label">What is your first name? <input type="name" id="name" placeholder="First Name"
+                    required /></label>
+            <label id="last-name-label">What is your last name? <input type="name" placeholder="Last Name"
+                    required /></label>
+            <label id="email-label">What is your email address? <input type="email" id="email"
+                    placeholder="Email Address" required /></label>
+        </fieldset>
+
+        <fieldset>
+            <label id="number-label">
+                <h3>Can you guess how many Discworld novels there are?</h3> <input type="number" id="number" min="0"
+                    max="41" placeholder="number" required />
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <h3>Who is your favorite character group?</h3>
+            <select name="charGroup" id="dropdown" class="charGroup">
+                <option value=" ">Choose one</option>
+                <option value="1">DEATH</option>
+                <option value="2">The Witches</option>
+                <option value="3">The City Guard</option>
+                <option value="4">The Wizards</option>
+                <option value="5">The Steam Age</option>
+                <option value="6">Tiffany Aching</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <h3>Have you read any other Terry Pratchett novels?</h3>
+            <div class="flex-container">
+                <div class="flex-child radio">
+                    <label><input type="radio" name="others" class="inline" value="novel" /> Yes </label>
+                    <label><input type="radio" name="others" class="inline" value="novel" /> No </label>
+                </div>
+                <div class="flex-child checkbox">
+                    <label><input type="checkbox" name="checkbox" class="inline" value="checkbox" /> I love the
+                        audiobooks! </label>
+                    <label><input type="checkbox" name="checkbox" class="inline" value="checkbox" /> Ook </label>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <label>My favorite place to hangout in Discworld is :
+                <textarea name="hangout" rows="3" cols="30"
+                    placeholder="Dunnmanifestin... or maybe with the Silver Horde... or maybe at the Library..."></textarea>
+            </label>
+        </fieldset>
+
+        <button id="submit" type="submit">Submit</button>
+
+    </form>
+</body>
